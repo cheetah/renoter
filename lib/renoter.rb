@@ -23,6 +23,14 @@ class Renoter
     false
   end
   
+  # Logout.
+  # Returns true.
+  def logout
+    @username = nil
+    @password = nil
+    true
+  end
+  
   # Retrieves public timeline, the last 20 statuses.
   # Returns JSON-decoded object, which contains statuses or errors.
   def public_timeline()
