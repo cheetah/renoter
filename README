@@ -1,0 +1,22 @@
+Renoter Gem
+--------------------------------
+
+Usage:
+	
+	require 'renoter'
+	
+	r = Renoter.new
+	public_timeline = r.public_timeline # Last 20 statuses
+	
+	if(r.login('user', 'password'))
+		r.update_status 'Hello from ruby!'
+		print 'OK!'
+	else
+		print 'Login failed'
+	end
+	
+	friends_timeline = r.friends_timeline('5') # Last 5 freinds statuses
+	
+
+
+For more functionality see documentation.
